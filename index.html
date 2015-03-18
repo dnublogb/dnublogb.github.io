@@ -1,97 +1,29 @@
-﻿<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=640">
+---
+layout: default
+title: "mojobojo"
+---
 
-    <link rel="stylesheet" href="stylesheets/core.css" media="screen">
-    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+<div id="posts">
+	<h2>Posts</h2>
+		{% for post in site.posts %}
+		<div class="post">
+			<div>
+				<span class="post_date">{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a>
+			</div>
+			<div class="post_summary">{{ post.summary }}</div>
+		</div>	
+		{% endfor %}
+</div>
 
-    <script type="text/javascript" src="javascripts/modernizr.js"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function () {
-        $('#main_content').headsmart()
-      })
-    </script>
-    <title>Blogb DaiNam University by dnublogb</title>
-  </head>
+<hr/>
 
-  <body>
-    <a id="forkme_banner" href="https://github.com/dnublogb">View on GitHub</a>
-    <div class="shell">
+<div id="blurb">
+	<p>
+		<strong>Samurai:</strong> Hakuin, where do I go when I die?<br/>
+		<strong>Hakuin:</strong> I have no idea.<br/>
+		<strong>Samurai:</strong> What do you mean you don't know? You're a Zen master!<br/>
+		<strong>Hakuin:</strong> Yes, but not a dead one.<br/>
+	</p>
+</div>
 
-      <header>
-        <span class="ribbon-outer">
-          <span class="ribbon-inner">
-            <h1>Blogb DaiNam University</h1>
-            <h2>Website blogb của Đại Nam</h2>
-          </span>
-          <span class="left-tail"></span>
-          <span class="right-tail"></span>
-        </span>
-      </header>
-
-      <div id="no-downloads">
-        <span class="inner">
-        </span>
-      </div>
-
-
-      <span class="banner-fix"></span>
-
-      <section id="main_content">
-        <h3>
-<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>Tự giới thiệu</h3>
-<img align="left" src="images/battay.jpg" width="200" height="150" />
-<p>Tôi là Lê Huy Hoàng, là sinh viên lớp CNTT0801, năm thứ nhât khoa Công nghệ thông tin,  Đại học Đại Nam, nguyện vọng trở thành người lập trình đồ họa cho máy tính. Mong được làm quen với các bạn.</p>
-
-<h3>
-<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span class="octicon octicon-link"></span></a>Đào tạo</h3>
-
-<p>Tốt nghiệp Trung học Phổ thông Kim Liên Hà Nội năm 2013</br> Đoạt giải nhì cờ vua toàn trường.</br>Giải khuyến khích ca hát toàn trường.</br>Tham gia đội lập trình VOLIMPIA.</p>
-
-<h3>
-<a id="rather-drive-stick" class="anchor" href="#rather-drive-stick" aria-hidden="true"><span class="octicon octicon-link"></span></a>Kinh nghiêm công tác</h3>
-
-<p>Tốt nghiệp phổ thông trung học năm 2013.</br>
-Đã học lập trình Pascal năm 2011.</br>
-Đã học tin học đại cương năm 2014.</br>
-Dã có chứng chỉ tin học A năm 2012</p>
-
-<h3>
-<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span class="octicon octicon-link"></span></a>Kỹ năng</h3>
-
-<p>Lập trình Pascal/lập trình C/C++.</br>
-Thành thạo tin học văn phòng: Word, Excels, Powerpoint.</br>
-Biết dùng phần mềm quản lý phiên bản với Github.</br>
-Biết xây dựng website cá nhân trên github page</p>
-
-<h3>
-<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>Liên hệ</h3>
-
-<p>liên hệ qua email: Garcia@gmail.com. </br>
-Liên hệ qua facebook: facebook.com/Garcia</br>
-Liên hệ qua điện thoại: 0123123123123.</p>
-      </section>
-
-      <footer>
-        <span class="ribbon-outer">
-          <span class="ribbon-inner">
-            <p>Projects by <a href="https://github.com/dnublogb">dnublogb</a> can be found on <a href="https://github.com/dnublogb">GitHub</a></p>
-          </span>
-          <span class="left-tail"></span>
-          <span class="right-tail"></span>
-        </span>
-        <p>Generated with <a href="http://pages.github.com">GitHub Pages</a> using Merlot</p>
-        <span class="octocat"></span>
-      </footer>
-
-    </div>
-
-    
-  </body>
-</html>
+<hr/>
